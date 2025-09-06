@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    position: relative;
+    height: 100%;
+    background-color: aqua;
+    align-items: center;
+    justify-items: center;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-carousel {
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+
+.carousel-image {
+    min-width: 100%;
+    max-width: 100%;
+
+    object-fit: cover;
+    object-position: center 50%;
+}
+
+.button-container#left {
+    position: absolute;
+    left: 4px;
+}
+
+.button-container#right {
+    position: absolute;
+    right: 4px;
+}
+
+.nav-container {
+    position: absolute;
+    bottom: 8px;
+}
+
